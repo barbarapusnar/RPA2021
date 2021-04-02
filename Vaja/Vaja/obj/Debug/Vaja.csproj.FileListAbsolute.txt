@@ -74,3 +74,7 @@ E:\Barbara\RPA2021\Vaja\Vaja\obj\Debug\Vaja.csproj.CoreCompileInputs.cache
 E:\Barbara\RPA2021\Vaja\Vaja\obj\Debug\Vaja.csproj.CopyComplete
 E:\Barbara\RPA2021\Vaja\Vaja\obj\Debug\Vaja.dll
 E:\Barbara\RPA2021\Vaja\Vaja\obj\Debug\Vaja.pdb
+E:\Barbara\RPA2021\Vaja\Vaja\bin\EntityFramework.dll
+E:\Barbara\RPA2021\Vaja\Vaja\bin\EntityFramework.SqlServer.dll
+E:\Barbara\RPA2021\Vaja\Vaja\bin\EntityFramework.xml
+E:\Barbara\RPA2021\Vaja\Vaja\bin\EntityFramework.SqlServer.xml
