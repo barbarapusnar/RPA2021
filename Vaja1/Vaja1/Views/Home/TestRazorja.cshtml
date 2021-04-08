@@ -1,0 +1,28 @@
+﻿
+<h1>Razor sintaksa</h1>
+@*inline sintaksa brez ;*@
+<h2>@DateTime.Now.ToShortDateString()</h2>
+@*koda c# v več vrsticah*@
+@{
+    var datum = DateTime.Now.ToLongTimeString();
+    var sporočilo = "Pozdravljen svet";
+}
+<h2>Ura je @datum</h2>
+<h3>@sporočilo</h3>
+<br />
+<br />
+@*html znotraj c#*@
+@*@{
+    var datum1 = DateTime.Now.ToLongDateString();
+    var m = "Drugič pozdravljen";
+    <text>Danes je </text> @datum1 <br />
+    @m
+}*@
+@{
+    var datum1 = DateTime.Now.ToLongDateString();
+    var m = "Drugič pozdravljen";
+    @:Danes je  @datum1 <br />
+    @m
+}
+
+
