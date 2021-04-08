@@ -132,7 +132,6 @@
     </Compile>
     <Compile Include="Models\Kupec.cs" />
     <Compile Include="Models\Račun.cs" />
-    <Compile Include="Models\VajaCodeFirstContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
