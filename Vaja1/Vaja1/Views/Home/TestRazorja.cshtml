@@ -13,16 +13,31 @@
 <br />
 @*html znotraj c#*@
 @*@{
-    var datum1 = DateTime.Now.ToLongDateString();
-    var m = "Drugič pozdravljen";
-    <text>Danes je </text> @datum1 <br />
-    @m
-}*@
+        var datum1 = DateTime.Now.ToLongDateString();
+        var m = "Drugič pozdravljen";
+        <text>Danes je </text> @datum1 <br />
+        @m
+    }*@
 @{
     var datum1 = DateTime.Now.ToLongDateString();
     var m = "Drugič pozdravljen";
     @:Danes je  @datum1 <br />
     @m
+}
+<br />
+@if (DateTime.IsLeapYear(DateTime.Now.Year))
+{
+    @DateTime.Now.Year <text>je prestopno</text>
+}
+else
+{
+    @DateTime.Now.Year <text>ni prestopno</text>
+}
+@for (int i = 0; i < 5; i++)
+{
+    <br />
+    @i.ToString();
+
 }
 
 

@@ -11,7 +11,7 @@ namespace VajaCodeFirst1.Models
         
         public decimal Vrednost { get; set; }
         public DateTime DatumIzdaje { get; set; }
-        
+        public int KupecId { get; set; }
         public Kupec Kupec { get; set; }
     }
 }
