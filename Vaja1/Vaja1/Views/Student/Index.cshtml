@@ -1,18 +1,18 @@
 ﻿@model IEnumerable<Vaja1.Models.Student>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Študenti";
 }
 
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Ustvari novega", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.StudentName)
+            Ime študenta
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Age)
@@ -29,9 +29,9 @@
             @Html.DisplayFor(modelItem => item.Age)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.StudentId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.StudentId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.StudentId })
+            @Html.ActionLink("Uredi", "Edit", new { id=item.StudentId }) |
+            @Html.ActionLink("Podrobnosti", "Details", new { id=item.StudentId }) |
+            @Html.ActionLink("Briši", "Delete", new { id=item.StudentId })
         </td>
     </tr>
 }

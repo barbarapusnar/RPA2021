@@ -7,7 +7,11 @@
 <h2>Študent</h2>
 <ul>
     <li>ID študenta : @Model.StudentId</li>
-    <li>Ime         : @Model.StudentName</li>
+    @Html.TextBox("StudentName", Model.StudentName, new { @class = "form-control" }) 
+    @Html.TextBoxFor(m=>m.StudentName, new { @class = "form-control" })
     <li>Starost     : @Model.Age</li>
+    @Html.DropDownListFor(m=>m.Spol,
+    new SelectList(Enum.GetValues(typeof(Vaja1.Models.Gender))),
+    "Izberi spol")
 </ul>
 
